@@ -28,7 +28,7 @@ namespace XCatcher
             Application.logMessageReceived += OnLogMessageReceived;
 
             // Create the logs directory if it doesn't exist
-            _logsDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Colossal Order\\Cities_Skylines\\Addons\\Mods\\XCatcher\\Logs");
+            _logsDirectory = Path.Combine(DataLocation.localApplicationData, "Addons", "Mods", "XCatcher", "Logs");
             if (!Directory.Exists(_logsDirectory))
             {
                 Directory.CreateDirectory(_logsDirectory);
